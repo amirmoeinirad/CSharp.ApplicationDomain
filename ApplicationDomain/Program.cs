@@ -44,7 +44,7 @@ namespace ApplicationDomain
             AppDomain.Unload(newDomain);
 
 
-            Console.WriteLine("\nDone.");
+            Console.WriteLine("\nDone!");
         }
     }
 }
