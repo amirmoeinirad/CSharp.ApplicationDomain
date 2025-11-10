@@ -25,6 +25,7 @@ namespace ApplicationDomain
             // Get the current application domain.
             AppDomain currentDomain = AppDomain.CurrentDomain;
             Console.WriteLine("Hello from the current AppDomain: {0}", currentDomain.FriendlyName);
+            Console.WriteLine("Current AppDomain ID: {0}", currentDomain.Id);
 
 
             // The AppDomain class represents an application domain,
@@ -38,6 +39,7 @@ namespace ApplicationDomain
             {
                 Console.WriteLine("\nHello from inside the new AppDomain!");
             });
+            Console.WriteLine("New AppDomain ID: {0}", newDomain.Id);
 
 
             // Unload the AppDomain
